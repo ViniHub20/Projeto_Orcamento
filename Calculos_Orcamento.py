@@ -15,7 +15,7 @@ Poderá ser parcelado em até 5 vezes
 
 Digite sua forma de pagamento para o contrato: """)
         
-        while opcao_contrato != "1" and opcao_contrato != "2":
+        while opcao_contrato != "1" and opcao_contrato != "2" and opcao_contrato != "3":
             opcao_contrato = input("""
 Opção inválida!
 

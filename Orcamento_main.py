@@ -10,24 +10,24 @@ def menu():
     3- Estudio
 
     """)
-    escolhas_imovel = [1,2,3]
-    escolha_imovel = int(input("Escolha:" ))
     
-    while escolha_imovel not in escolhas_imovel:
-            escolha_imovel = int(input("""======xx======
+    escolha_imovel = (input("Escolha:" ))
+    
+    while escolha_imovel != "1" and escolha_imovel != "2" and escolha_imovel != "3":
+        escolha_imovel = (input("""======xx======
 Opção inválida! Escolha uma das opções disponíveis."
 
 Digite sua opção: """))
     
-    if escolha_imovel == 1:
+    if escolha_imovel == "1":
         casa().calcular()
         
         
-    elif escolha_imovel == 2:
+    elif escolha_imovel == "2":
         apartamento().calcular()
         
         
-    elif escolha_imovel == 3:
+    elif escolha_imovel == "3":
         estudio().calcular()
                
 menu ()
